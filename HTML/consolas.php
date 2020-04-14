@@ -1,19 +1,3 @@
- <?php
-    $servername = "localhost";
-    $database = "videogames_site";
-    $username = "root";
-    $password = "";
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $database);
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    print_r("Connected successfully");
-    mysqli_close($conn);
- 
-?>
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -130,15 +114,13 @@
 				<li><a href="">Y</a></li>
 				<li><a href="">Z</a></li>
 			</ul>-->
-
-
-			<div class="row">
+		<div class="row">
 				<div class="col-xl-7 col-lg-8 col-md-7">
 					<div class="row" id="listarConsolas">
 
                     <div class="col-xl-3 col-md-6 mb-4">
         				<div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/consolas/icons/<?php echo $img_pla ?>" alt="Card image cap"
+            <img  src="consola.png" alt="Card image cap"
                 	 style="height: 40%; width: 40%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding-top: 10%;">
             <div class="card-body" style="text-align: center">
                 <h5 class="card-title">#<? echo $row[1] ?></h5>
@@ -288,5 +270,14 @@
 	<script src="js/jquery.sticky-sidebar.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+    <script src="functions_e.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+
+            loadListPlataformas(); // carga lista de consolas
+
+        }, false);
+    </script>
+    </script>
 	</body>
 </html>
