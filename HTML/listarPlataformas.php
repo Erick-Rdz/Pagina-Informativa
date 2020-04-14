@@ -9,7 +9,7 @@ header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Max-Age: 86400');
 }
 
-require '/db/Database.php';
+require 'db/Database.php';
 $db = new Database;
 $connection = $db->connect();
 
@@ -39,9 +39,9 @@ while ($row = mysqli_fetch_row($resultC)) { // por cada fila itera
     $data = $row[0]."||".$row[1]."||".$row[2]."||".$row[3];
     ?>
 
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/consolas/icons/<?php echo $img_pla ?>" alt="Card image cap"
+    <div class="col-xl-3 col-md-6 mb-4" style="margin-right: 100px;">
+        <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="img/<?php echo $img_pla ?>" alt="Card image cap"
                  style="height: 40%; width: 40%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding-top: 10%;">
             <div class="card-body" style="text-align: center">
                 <h5 class="card-title"><?php echo $row[1] ?></h5>
@@ -51,11 +51,6 @@ while ($row = mysqli_fetch_row($resultC)) { // por cada fila itera
                 <li class="list-group-item">$<?php echo $row[2] ?> <small>/ hora de juego</small></li>
                 <li class="list-group-item">Lanzamiento: <strong><?php echo $row[3] ?></strong></li>
             </ul>
-            <div class="card-body" style="text-align: center">
-                <!--<a href="#" class="card-link" data-toggle="modal" data-target="#verJuegosInstaladosModal">Juegos</a>-->
-                <a href="#" class="card-link" data-toggle="modal" data-target="#editarTarifaModal" onclick="cargaDataTarifaModalUp('<?php echo $data ?>')">Editar</a>
-                <!--<a id="" href="#" data-toggle="modal" data-target="#confirmarEliminacionModal" class="card-link" style="color: #ff253a" onclick="deleteConsola('<?php echo $row[0] ?>')">Eliminar</a>-->
-            </div>
         </div>
     </div>
 

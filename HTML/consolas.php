@@ -114,23 +114,10 @@
 				<li><a href="">Y</a></li>
 				<li><a href="">Z</a></li>
 			</ul>-->
-		<div class="row">
+		<div class="row" >
 				<div class="col-xl-7 col-lg-8 col-md-7">
-					<div class="row" id="listarConsolas">
-
-                    <div class="col-xl-3 col-md-6 mb-4">
-        				<div class="card" style="width: 18rem;">
-            <img  src="consola.png" alt="Card image cap"
-                	 style="height: 40%; width: 40%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; padding-top: 10%;">
-            <div class="card-body" style="text-align: center">
-                <h5 class="card-title">#<? echo $row[1] ?></h5>
-                <p class="card-text" style="text-align: center"><strong><?php echo $resultP[1] ?></strong></p>
-            </div>
-		            <ul class="list-group list-group-flush" style="text-align: center">
-		                <li class="list-group-item">$<?php echo $resultP[2] ?> <small>/ hora de juego</small></li>
-		                <li class="list-group-item"><strong><? echo $row[2] ?></strong></li>
-		            </ul>
-       			 </div>
+					<div class="row" id="listarPlataformas">
+                    <div class="col-xl-3 col-md-6 mb-4>
     		</div>
 						<!--<div class="col-lg-4 col-md-6">
 							<div class="game-item">
