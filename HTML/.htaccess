@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si el archivo y la carpeta no existen hacer siguiente reescritura
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+Header add Access-Control-Allow-Origin
+*" 
+# Redirecciona todas las peticiones a index
+RewriteRule ^ index.php [QSA,L]
