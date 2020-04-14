@@ -118,7 +118,7 @@
 			</ul>-->
 		<div class="row" >
 				<div class="col-xl-7 col-lg-8 col-md-7">
-					<div class="row" id="listarPlataformas">
+					<div class="row" id="listarAccesorios">
                     <div class="col-xl-3 col-md-6 mb-4>">
     				</div>
 						<div class="col-lg-4 col-md-6">
@@ -151,12 +151,12 @@
 							<div class="categories-widget">
 								<h4 class="widget-title">categories</h4>
 								<ul>
-									<li><a href="">Battle Royale</a></li>
-									<li><a href="">Retro</a></li>
-									<li><a href="">Pelea</a></li>
-									<li><a href="">Autos</a></li>
-									<li><a href="">Construccion</a></li>
-									<li><a href="">Otros</a></li>
+									<li><a href="">Games</a></li>
+									<li><a href="">Gaming Tips & Tricks</a></li>
+									<li><a href="">Online Games</a></li>
+									<li><a href="">Team Games</a></li>
+									<li><a href="">Community</a></li>
+									<li><a href="">Uncategorized</a></li>
 								</ul>
 							</div>
 						</div>
@@ -263,7 +263,7 @@
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
 
-            loadListPlataformas(); // carga lista de consolas
+            loadListAccesorios(); // carga lista de consolas
 
         }, false);
     </script>
